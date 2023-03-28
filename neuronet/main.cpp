@@ -1,6 +1,8 @@
 #include <cstdint>
 #include <iostream>
 
+#include "imgui/imgui.h"
+
 /**
  * Simple neural net study
  */
@@ -55,6 +57,17 @@ void askForNumber(std::string const &askText, double_t &number)
 int main(int   argc,
          char* argv[])
 {
+
+    ImGui::Text("Hello, world %d", 123);
+    if (ImGui::Button("Save"))
+    {
+        
+    }
+    char buf [1024] {0};
+    ImGui::InputText("string", buf, IM_ARRAYSIZE(buf));
+    float_t f = 0;
+    ImGui::SliderFloat("float", &f, 0.0f, 1.0f);
+    
     double_t numberOfSpots = 5;
     double_t lengthOfSpikes = 87.5;
 
