@@ -1,3 +1,7 @@
 ﻿x64
 neuronet/x64
 .idea
+.vs
+Debug
+Release
+*.vcxproj.user

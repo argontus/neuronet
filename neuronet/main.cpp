@@ -54,10 +54,13 @@ void askForNumber(std::string const &askText, double_t &number)
     }
 }
 
+int imgui_main(int, char**);
 int main(int   argc,
          char* argv[])
 {
 
+    imgui_main(argc, argv);
+    
     ImGui::Text("Hello, world %d", 123);
     if (ImGui::Button("Save"))
     {
